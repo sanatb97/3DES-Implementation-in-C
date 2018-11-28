@@ -15,3 +15,7 @@ Plaintext= DK1(EK2(DK3(Ciphertext))), i.e., Decrypt with K3, Encrypt with K2 and
 Each triple encryption/decryption works on one block of size 64 bits.
 There are multiple keying options to choose from, but the one which is the strongest is making all 3 keys independent of each other. There are 168 independent key bits, and a meet-in-the-middle would require 22 × 56 steps to break the encryption.
 The overall time complexity of this algorithm is O(3*|input_text|), making it asymptotically linear-time.
+
+# Execution steps
+1. Compiltion : make -f makefile.mk
+2. Execution : ./a.out <input.txt
